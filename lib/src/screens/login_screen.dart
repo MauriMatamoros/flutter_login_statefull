@@ -13,7 +13,6 @@ class LoginScreenState extends State<LoginScreen> with ValidationMixin{
   String email = '';
   String password = '';
   
-
   Widget build(context) {
     return Container(
       margin: EdgeInsets.all(20.0),
@@ -53,7 +52,7 @@ class LoginScreenState extends State<LoginScreen> with ValidationMixin{
         labelText: 'Password',
         hintText: 'Password'
       ),
-      obscureText: false,
+      obscureText: true,
       validator: validatePassword,
       onSaved: (String value) {
         password = value;
